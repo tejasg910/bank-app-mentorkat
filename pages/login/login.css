@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.maincontainer{
+  
+    height: 90vh;
+}
+
+form{
+    width: 25vw;
+}
+
+.loginheader{
+    margin: 2rem 0;
+}
+
+.loginheading{
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    form{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 90vw;
+    }
+}

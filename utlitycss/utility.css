@@ -1,0 +1,49 @@
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-flex-start{
+    justify-content: flex-start;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.input{
+    padding: 15px;
+    border-radius: 0;
+    font-size: 15px;
+    margin: 5px 0;
+    border: 2px solid black;
+    
+}
+.input::placeholder{
+    color: black;
+}
+
+.inputcontainer{
+    margin: 0.5rem 0;
+}
+
+.inputbtn{
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    width: 70%;
+    margin: 1rem auto;
+transition: 0.2s all;
+cursor: pointer;
+}
+
+.inputbtn:hover{
+    background-color: transparent;
+    color: black;
+}
