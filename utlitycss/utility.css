@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+.justify-space-between{
+    justify-content: space-between;
+}
+
 .align-center{
     align-items: center;
 }
@@ -36,7 +40,7 @@
     background-color: black;
     color: white;
     font-weight: 800;
-    padding: 10px;
+    padding: 15px 10px;
     width: 70%;
     margin: 1rem auto;
 transition: 0.2s all;
@@ -46,4 +50,12 @@ cursor: pointer;
 .inputbtn:hover{
     background-color: transparent;
     color: black;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.active{
+    background-color: black;
 }
