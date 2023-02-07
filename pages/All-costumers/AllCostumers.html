@@ -26,7 +26,14 @@
         </div>
     </nav>
     <main class="mainsection">
-        <section class="tabsection">
+        <section id="tabsection" class="tabsection relative ">
+
+            <span>
+                <i id="closetab" class="fa-solid fa-xmark closebutton"></i>
+
+            </span>
+
+
             <ul class="tab active">
                 <li>
                     All Customers
@@ -53,37 +60,42 @@
                 </li>
             </ul>
         </section>
-        <section class="tablesection">
+        <section class="tablesection relative">
+            <span>
+                <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
+            </span>
+
             <h2>All Costumers</h2>
             <table>
                 <tr>
                     <td>Sr. No</td>
                     <td class="bold user">User Name</td>
                     <td>Block</td>
-                    <td>Active</td>
+                    <td class="bold">Activate</td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td class="user">John Doe</td>
-                    <td>A</td>
-                    <td>Yes</td>
+                    <td><i class="fa-solid fa-ban block"></i></td>
+                    <td><i class="fa-solid fa-ban block"></i></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td class="user">Jane Doe</td>
-                    <td>B</td>
-                    <td>No</td>
+                    <td><i class="fa-regular fa-circle-check activate"></i></td>
+                    <td><i class="fa-regular fa-circle-check activate"></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td class="user">Bob Smith</td>
-                    <td>C</td>
-                    <td>Yes</td>
+                    <td><i class="fa-solid fa-ban block"></i></td>
+                    <td><i class="fa-solid fa-ban block"></i></td>
                 </tr>
             </table>
 
         </section>
     </main>
+    <script src="./allcostumers.js"></script>
 </body>
 
 </html>
