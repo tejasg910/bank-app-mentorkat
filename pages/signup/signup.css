@@ -30,12 +30,7 @@
   align-items: center;
   transition: opacity 500ms ease-in-out all;
 }
-input[type="date"]::before {
-  content: "Select";
-  position: absolute;
-  left: 10px;
-  top: 20px;
-}
+
 .closebutton {
   display: none;
   position: absolute;
@@ -68,26 +63,12 @@ input[type="date"]::before {
   background-color: black !important;
 }
 
-table {
-  border-collapse: collapse;
-  border: 2px solid black;
-  width: 90%;
-  font-size: 1.7rem;
-  margin: 0 auto;
+.mainsection .formsection form {
+  width: 50%;
+  margin: 1rem auto;
 }
 
-.mainsection .tablesection {
-}
-.mainsection .tablesection td {
-  padding: 1rem;
-  border: 2px solid grey;
-}
-
-.mainsection .tablesection .user {
-  width: 60%;
-}
-
-.mainsection .tablesection h2 {
+.mainsection .formsection h2 {
   font-size: 3rem;
   text-align: center;
 }
@@ -119,7 +100,7 @@ table {
 }
 
 @media screen and (max-width: 400px) {
-  .mainsection .tablesection td {
+  .mainsection .formsection td {
     padding: 0.2rem;
   }
   .navcontainer p {
