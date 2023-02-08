@@ -103,6 +103,15 @@ table {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .openbutton {
+    display: none !important;
+  }
+  .closebutton {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .mainsection .tablesection td {
     padding: 0.2rem;
@@ -120,10 +129,31 @@ table {
 .opentab {
   display: block !important;
   opacity: 1;
+  animation-name: scale;
+  animation-duration: 0.3s;
 }
 
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .closetab {
   display: none;
+  animation-name: scaleclose;
+  animation-duration: 0.3s;
+}
+
+@keyframes scaleclose {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
 }
 
 .activate {
