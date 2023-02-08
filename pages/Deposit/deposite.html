@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All costumers</title>
+    <title>Deposit amount</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../utlitycss/utility.css">
     <link rel="stylesheet" href="../../navbarstyle/navbarstyle.css">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="deposit.css">
 </head>
 
 <body>
@@ -39,12 +39,12 @@
                     All Customers
                 </li>
             </ul>
-            <ul class="tab active">
+            <ul class="tab ">
                 <li>
                     Create Account
                 </li>
             </ul>
-            <ul class="tab ">
+            <ul class="tab active">
                 <li>
                     Deposit
                 </li>
@@ -65,38 +65,68 @@
                 </li>
             </ul>
         </section>
-        <section class="formsection relative">
+        <section class="tablesection relative">
             <span>
                 <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
             </span>
 
-            <h2>Create new account</h2>
-            <form class="flex flex-column ">
+            <h2>All Costumers</h2>
+
+
+            <div class="flex justify-center align-center">
                 <div class="flex flex-column inputcontainer">
 
-                    <label for="name">NAME</label>
-                    <input class="input" type="name" placeholder="John">
+
+                    <input class="input" type="email" placeholder="Amount">
                 </div>
                 <div class="flex flex-column inputcontainer">
 
-                    <label for="email">EMAIL</label>
-                    <input class="input" type="email" placeholder="hello@greatsite.com">
+
+                    <input class="submitbtn" type="submit" value="confirm">
+                </div>
+            </div>
+            <table>
+
+                <tr>
+
+                    <td class="user">USERNAME</td>
+                    <td>JOHN</td>
+
+                </tr>
+                <tr>
+
+                    <td class="user">BALANCE</td>
+                    <td>32082803820</td>
+
+                </tr>
+                <tr>
+
+                    <td class="user">ACTIVE</td>
+                    <td><i class="fa-regular fa-circle-check activate"></i></td>
+
+                </tr>
+                <tr>
+
+                    <td class="user">UNBLOCKED</td>
+                    <td><i class="fa-regular fa-circle-check activate"></i></td>
+
+                </tr>
+            </table>
+            <div class="flex justify-center align-center">
+                <div class="flex flex-column inputcontainer">
+
+
+                    <input class="input" type="text" placeholder="Amount">
                 </div>
                 <div class="flex flex-column inputcontainer">
 
-                    <label for="email">PASSWORD</label>
-                    <input class="input " type="password" placeholder="Password">
-                </div>
-                <div class="flex flex-column inputcontainer">
 
-                    <label for="date">PASSWORD</label>
-                    <input class="input " type="date" placeholder="Password">
+                    <input class="submitbtn" type="submit" value="Deposit">
                 </div>
-                <input class="inputbtn" type="submit" value="create">
-            </form>
+            </div>
         </section>
     </main>
-    <script src="./signup.js"></script>
+    <script src="deposit.js"></script>
 </body>
 
 </html>

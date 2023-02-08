@@ -1,65 +1,73 @@
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.flex-column{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
-.justify-flex-start{
-    justify-content: flex-start;
-}
-
-.justify-center{
-    justify-content: center;
+.justify-flex-start {
+  justify-content: flex-start;
 }
 
-.justify-space-between{
-    justify-content: space-between;
+.justify-center {
+  justify-content: center;
 }
 
-.align-center{
-    align-items: center;
+.justify-space-between {
+  justify-content: space-between;
 }
 
-.input{
-    padding: 15px;
-    border-radius: 0;
-    font-size: 15px;
-    margin: 5px 0;
-    border: 2px solid black;
-    
-}
-.input::placeholder{
-    color: black;
+.align-center {
+  align-items: center;
 }
 
-.inputcontainer{
-    margin: 0.5rem 0;
+.input {
+  padding: 15px;
+  border-radius: 0;
+  font-size: 15px;
+  margin: 5px 0;
+  border: 2px solid black;
+}
+.input::placeholder {
+  color: black;
 }
 
-.inputbtn{
-    background-color: black;
-    color: white;
-    font-weight: 800;
-    padding: 15px 10px;
-    width: 70%;
-    margin: 1rem auto;
-transition: 0.2s all;
-cursor: pointer;
+.inputcontainer {
+  margin: 0.5rem 0;
 }
 
-.inputbtn:hover{
-    background-color: transparent;
-    color: black;
+.inputbtn {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  padding: 15px 10px;
+  width: 70%;
+  margin: 1rem auto;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.submitbtn {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  padding: 15px 10px;
+  width: 100%;
+  transition: 0.2s all;
+  cursor: pointer;
 }
 
-.bold{
-    font-weight: bold;
+.inputbtn:hover {
+  background-color: transparent;
+  color: black;
 }
 
-.active{
-    background-color: black;
+.bold {
+  font-weight: bold;
 }
 
-.relative{
-    position: relative;
+.active {
+  background-color: black;
+}
+
+.relative {
+  position: relative;
 }

@@ -69,7 +69,7 @@
 }
 
 .mainsection .formsection h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -97,19 +97,31 @@
   .closebutton {
     display: none !important;
   }
+
+  .mainsection .formsection h2 {
+    width: 80%;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .mainsection .formsection td {
-    padding: 0.2rem;
-  }
   .navcontainer p {
     margin: 0 1rem;
     font-size: 1rem;
   }
 
+  .mainsection .formsection h2 {
+    width: 70%;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
   .navcontainer i {
     font-size: 1rem;
+  }
+  .mainsection .formsection form {
+    width: 80%;
   }
 }
 
