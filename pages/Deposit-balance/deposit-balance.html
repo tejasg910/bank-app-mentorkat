@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit amount</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../utlitycss/utility.css">
+    <link rel="stylesheet" href="../../navbarstyle/navbarstyle.css">
+    <link rel="stylesheet" href="user-balance.css">
+</head>
+
+<body>
+    <nav id="navbar" class="flex  justify-space-between">
+        <div class="flex justify-center align-center navcontainer">
+            <i class="fa-solid fa-ellipsis"></i>
+            <p>Welcome Admin</p>
+        </div>
+        <div class="flex justify-center align-center navcontainer">
+            <p>2023-05-07</p>
+            <i class="fa-solid fa-power-off"></i>
+        </div>
+    </nav>
+    <main class="mainsection">
+        <section id="tabsection" class="tabsection relative ">
+
+            <span>
+                <i id="closetab" class="fa-solid fa-xmark closebutton"></i>
+
+            </span>
+
+
+
+            <ul class="tab active">
+                <li>
+                    Deposit
+                </li>
+            </ul>
+            <ul class="tab">
+                <li>
+                    Withdraw
+                </li>
+            </ul>
+            <ul class="tab ">
+                <li>
+                    Balance
+                </li>
+            </ul>
+            <ul class="tab ">
+                <li>
+                    Transfer
+                </li>
+            </ul>
+        </section>
+        <section class="tablesection relative">
+            <span>
+                <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
+            </span>
+
+            <h2>Deposit</h2>
+
+            <div class="flex p-0-2 transferform justify-space-between ">
+                <div class="flex justify-center align-center">
+                    <div class="flex flex-column inputcontainer">
+
+
+                        <input class="input" type="email" placeholder="SOURCE">
+                    </div>
+                    <div class="flex flex-column inputcontainer">
+
+
+                        <input class="submitbtn" type="submit" value="confirm">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </main>
+    <script src="user-balance.js"></script>
+</body>
+
+</html>

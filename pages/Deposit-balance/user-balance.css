@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navcontainer i {
+  font-size: 2rem;
+}
+
+.navcontainer p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.mainsection {
+  height: calc(100vh - 65px);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.mainsection .tabsection {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 500ms ease-in-out all;
+}
+
+.closebutton {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+
+.openbutton {
+  font-size: 2rem;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.mainsection .tabsection li {
+  list-style: none;
+}
+.mainsection .tabsection .tab {
+  padding: 1rem 2rem;
+  background-color: rgb(51, 49, 49);
+  color: white;
+  width: 200px;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.active {
+  background-color: black !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100%;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+
+.mainsection .tablesection {
+}
+.mainsection .tablesection td {
+  padding: 0.4rem;
+  border: 2px solid grey;
+}
+
+.mainsection .tablesection h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .mainsection {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .mainsection .tabsection {
+    display: none;
+  }
+  .openbutton {
+    display: block !important;
+  }
+  .closebutton {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .openbutton {
+    display: none !important;
+  }
+  .closebutton {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainsection .tablesection td {
+    padding: 0.2rem;
+  }
+  .navcontainer p {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .navcontainer i {
+    font-size: 1rem;
+  }
+  .tablesection table {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .transferform {
+    flex-direction: column;
+  }
+
+  .tablecontainer {
+    flex-direction: column;
+  }
+  .tablecontainer table {
+    margin: 1rem 0;
+  }
+}
+.opentab {
+  display: block !important;
+  opacity: 1;
+  animation-name: scale;
+  animation-duration: 0.3s;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.closetab {
+  display: none;
+  animation-name: scaleclose;
+  animation-duration: 0.3s;
+}
+
+@keyframes scaleclose {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.activate {
+  color: green;
+}
+
+.block {
+  color: red;
+}
