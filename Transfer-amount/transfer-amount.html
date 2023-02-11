@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../utlitycss/utility.css">
     <link rel="stylesheet" href="../../navbarstyle/navbarstyle.css">
-    <link rel="stylesheet" href="user-balance.css">
+    <link rel="stylesheet" href="transfer-amount.css">
 </head>
 
 <body>
@@ -34,8 +34,7 @@
             </span>
 
 
-
-            <ul class="tab active">
+            <ul class="tab ">
                 <li>
                     Deposit
                 </li>
@@ -50,7 +49,7 @@
                     Balance
                 </li>
             </ul>
-            <ul class="tab ">
+            <ul class="tab active">
                 <li>
                     Transfer
                 </li>
@@ -61,29 +60,69 @@
                 <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
             </span>
 
-            <h2>Deposit</h2>
+            <h2>Transfer </h2>
 
-            <div class="flex p-0-2 transferform justify-space-between ">
+            <div class="flex  transferform justify-space-between">
                 <div class="flex justify-center align-center">
                     <div class="flex flex-column inputcontainer">
 
 
-                        <input class="input" type="email" placeholder="Amount">
+                        <input class="input" type="email" placeholder="Target">
                     </div>
                     <div class="flex flex-column inputcontainer">
 
 
-                        <input class="submitbtn" type="submit" value="Deposit">
+                        <input class="submitbtn" type="submit" value="confirm">
                     </div>
                 </div>
 
             </div>
+            <div class="flex tablecontainer">
+                <table>
+
+                    <tr>
+
+                        <td>USERNAME</td>
+                        <td>JOHN</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>BALANCE</td>
+                        <td>32082803820</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>ACTIVE</td>
+                        <td><i class="fa-regular fa-circle-check activate"></i></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>UNBLOCKED</td>
+                        <td><i class="fa-regular fa-circle-check activate"></i></td>
+
+                    </tr>
+                </table>
+
+            </div>
+            <hr>
+            <div class="flex justify-flex-start align-center">
+                <div class="flex flex-column inputcontainer">
 
 
+                    <input class="input" type="text" placeholder="Amount">
+                </div>
+                <div class="flex flex-column inputcontainer">
 
+
+                    <input class="submitbtn" type="submit" value="TRANSFER">
+                </div>
+            </div>
         </section>
     </main>
-    <script src="user-balance.js"></script>
+    <script src="transfer-amount.js"></script>
 </body>
 
 </html>
