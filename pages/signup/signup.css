@@ -1,42 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-.navcontainer i {
-  font-size: 2rem;
-}
-
-.navcontainer p {
-  margin: 0 1rem;
-  font-size: 1.5rem;
-}
-
-.mainsection {
-  height: calc(100vh - 65px);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.mainsection .tabsection {
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: opacity 500ms ease-in-out all;
-}
-
 .closebutton {
-  display: none;
-  position: absolute;
-  right: 10px;
   top: 10px;
-  color: white;
+  right: 10px;
+  cursor: pointer;
 }
 
 .openbutton {
@@ -47,82 +12,15 @@
   top: 10px;
 }
 
-.mainsection .tabsection li {
-  list-style: none;
-}
-.mainsection .tabsection .tab {
-  padding: 1rem 2rem;
-  background-color: rgb(51, 49, 49);
-  color: white;
-  width: 200px;
-  margin: 0.5rem;
-  text-align: center;
-}
-
 .active {
   background-color: black !important;
+  color: white;
 }
 
-.mainsection .formsection form {
-  width: 50%;
-  margin: 1rem auto;
-}
-
-.mainsection .formsection h2 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 900px) {
-  .mainsection {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .mainsection .tabsection {
-    display: none;
-  }
-  .openbutton {
-    display: block !important;
-  }
-  .closebutton {
-    display: block !important;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .openbutton {
-    display: none !important;
-  }
-  .closebutton {
-    display: none !important;
-  }
-
-  .mainsection .formsection h2 {
-    width: 80%;
-    font-size: 2rem;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .navcontainer p {
-    margin: 0 1rem;
-    font-size: 1rem;
-  }
-
-  .mainsection .formsection h2 {
-    width: 70%;
-    font-size: 2rem;
-    margin: 0 auto;
-  }
-
-  .navcontainer i {
-    font-size: 1rem;
-  }
-  .mainsection .formsection form {
-    width: 80%;
-  }
+.closetab {
+  animation-name: scaleclose;
+  animation-duration: 0.3s;
+  display: none;
 }
 
 .opentab {
@@ -140,8 +38,7 @@
     transform: scale(1);
   }
 }
-.closetab {
-  display: none;
+#closetab {
   animation-name: scaleclose;
   animation-duration: 0.3s;
 }
@@ -153,12 +50,4 @@
   to {
     transform: translate(-100%);
   }
-}
-
-.activate {
-  color: green;
-}
-
-.block {
-  color: red;
 }
