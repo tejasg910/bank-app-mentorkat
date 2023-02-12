@@ -9,7 +9,7 @@
   display: none;
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 20px;
 }
 
 .active {
@@ -18,9 +18,9 @@
 }
 
 .closetab {
-  animation-name: scaleclose;
-  animation-duration: 0.3s;
-  display: none;
+  transition: transform 0.2s;
+  transform: translateX(-100%);
+  display: none !important;
 }
 
 .opentab {

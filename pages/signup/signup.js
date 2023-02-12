@@ -3,8 +3,7 @@ const onOpenButton = document.getElementById("opentab");
 const closeTabButton = document.getElementById("closetab");
 onOpenButton.addEventListener("click", function () {
   tabContainer.classList.add("opentab");
-  onOpenButton.style.display = "none!important";
-
+  onOpenButton.style.visibility = "hidden";
   tabContainer.classList.remove("closetab");
 });
 closeTabButton.addEventListener("click", function () {
@@ -13,5 +12,7 @@ closeTabButton.addEventListener("click", function () {
   setTimeout(() => {
     tabContainer.classList.remove("opentab");
   }, 100);
+  onOpenButton.style.visibility = "visible";
+
   onOpenButton.style.display = "block";
 });
