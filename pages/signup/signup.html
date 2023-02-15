@@ -12,9 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="../../utlitycss/utility.css">
-    <link rel="stylesheet" href="../../navbarstyle/navbarstyle.css"> -->
-    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
@@ -35,49 +32,48 @@
             <div class="row d-flex flex-column flex-sm-row">
 
 
-                <section id="tabsection" class="bg-body-secondary col-12 position-relative col-sm-4  fs-4  ">
-
-                    <span>
-                        <i id="closetab" class="fa-solid fa-xmark closebutton position-absolute "></i>
-
-                    </span>
+                <section
+                    class="collapse position-relative collapse-horizontal bg-body-secondary show w-25 vh-100 d-none d-lg-block"
+                    id="collapseWidthExample">
+                    <div>
 
 
-                    <ul class="tab ">
-                        <li class="list-unstyled">
-                            All Customers
-                        </li>
-                    </ul>
-                    <ul class="tab active">
-                        <li class="list-unstyled">
-                            Create Account
-                        </li>
-                    </ul>
-                    <ul class="tab ">
-                        <li class="list-unstyled">
-                            Deposit
-                        </li>
-                    </ul>
-                    <ul class="tab ">
-                        <li class="list-unstyled">
-                            Withdraw
-                        </li>
-                    </ul>
-                    <ul class="tab ">
-                        <li class="list-unstyled">
-                            Balance
-                        </li>
-                    </ul>
-                    <ul class="tab ">
-                        <li class="list-unstyled">
-                            Transfer
-                        </li>
-                    </ul>
+
+                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                All Customers
+                            </li>
+                        </ul>
+                        <ul class="bg-black rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                Create New Account
+                            </li>
+                        </ul>
+
+                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                Deposit
+                            </li>
+                        </ul>
+                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                Withdraw
+                            </li>
+                        </ul>
+                        <ul class="bg-secondary rounded-0 mx-auto my-2 p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                Balance
+                            </li>
+                        </ul>
+                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                            <li>
+                                Transfer
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <section class="formsection relative col-12 col-sm-8">
-                    <span>
-                        <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
-                    </span>
+
 
                     <h2 class="text-center">Create new account</h2>
                     <form class="d-flex flex-column align-items-center">
@@ -101,7 +97,7 @@
                             <label for="date">DATE</label>
                             <input class="p-2 " type="date" placeholder="Password">
                         </div>
-                        <input class="p-2 mt-4 w-50 btn btn-success" type="submit" value="create">
+                        <input class="p-2 mt-4 w-50 btn bg-black text-white rounded-0" type="submit" value="Create">
                     </form>
                 </section>
             </div>
