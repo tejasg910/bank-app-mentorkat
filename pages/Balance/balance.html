@@ -5,113 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit amount</title>
+    <title>Balance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../utlitycss/utility.css">
-    <link rel="stylesheet" href="../../navbarstyle/navbarstyle.css">
-    <link rel="stylesheet" href="balance.css">
+
 </head>
 
 <body>
-    <nav id="navbar" class="flex  justify-space-between">
-        <div class="flex justify-center align-center navcontainer">
+    <nav id="navbar" class="max-vw-100 fs-4 d-flex  justify-content-between">
+        <div class="d-flex justify-center px-4 align-items-center navcontainer">
             <i class="fa-solid fa-ellipsis"></i>
-            <p>Welcome Admin</p>
+            <p class="m-0 px-2">Welcome Admin</p>
         </div>
-        <div class="flex justify-center align-center navcontainer">
-            <p>2023-05-07</p>
-            <i class="fa-solid fa-power-off"></i>
+        <div class="d-flex justify-center align-items-center navcontainer">
+            <p class="m-0 px-2">2023-05-07</p>
+            <i class="fa-solid fa-power-off pl-2"></i>
         </div>
     </nav>
-    <main class="mainsection">
-        <section id="tabsection" class="tabsection relative ">
-
-            <span>
-                <i id="closetab" class="fa-solid fa-xmark closebutton"></i>
-
-            </span>
+    <hr class="m-0">
+    <main id="main" class="d-flex vh-100 ">
 
 
-            <ul class="tab ">
-                <li>
-                    All Customers
-                </li>
-            </ul>
-            <ul class="tab ">
-                <li>
-                    Create Account
-                </li>
-            </ul>
-            <ul class="tab ">
-                <li>
-                    Deposit
-                </li>
-            </ul>
-            <ul class="tab">
-                <li>
-                    Withdraw
-                </li>
-            </ul>
-            <ul class="tab active">
-                <li>
-                    Balance
-                </li>
-            </ul>
-            <ul class="tab ">
-                <li>
-                    Transfer
-                </li>
-            </ul>
+
+        <section
+            class="collapse position-relative collapse-horizontal bg-body-secondary show w-25 vh-100 d-none d-lg-block"
+            id="collapseWidthExample">
+            <div>
+
+
+                <span class="position-absolute top-0 end-0">
+                    <i data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample"
+                        class="fa-solid fa-xmark d-block d-md-none closebutton"></i>
+
+                </span>
+
+
+                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                    <li>
+                        All Customers
+                    </li>
+                </ul>
+                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                    <li>
+                        Deposit
+                    </li>
+                </ul>
+                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                    <li>
+                        Withdraw
+                    </li>
+                </ul>
+                <ul class="bg-black rounded-0 mx-auto my-2 p-2 text-center text-white w-75  list-unstyled">
+                    <li>
+                        Balance
+                    </li>
+                </ul>
+                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                    <li>
+                        Transfer
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="tablesection relative">
-            <span>
-                <i id="opentab" class="fa-solid fa-ellipsis openbutton"></i>
-            </span>
+        <section class="vw-100 mx-5">
 
-            <h2>Balance</h2>
+            <h2>BALANCE</h2>
 
-            <div class="flex p-0-2 transferform justify-space-between ">
-                <div class="flex justify-center align-center">
-                    <div class="flex flex-column inputcontainer">
+            <div class="d-flex justify-center align-items-center ">
 
 
-                        <input class="input" type="email" placeholder="SOURCE">
-                    </div>
-                    <div class="flex flex-column inputcontainer">
 
+                <div class="form-floating m-2">
+                    <input type="email" class="form-control rounded-0  " id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Source</label>
 
-                        <input class="submitbtn" type="submit" value="confirm">
-                    </div>
+                </div>
+                <div class="m-2">
+                    <input type="button" class="btn rounded-0 py-3 px-5 bg-black text-white " value="Confirm">
                 </div>
 
             </div>
-            <div class="flex tablecontainer">
-                <table>
+            <div class="d-flex  flex-column flex-md-row">
+
+
+                <table class="fs-4 m-4">
 
                     <tr>
 
-                        <td>USERNAME</td>
-                        <td>JOHN</td>
+                        <td class="user p-2">USERNAME</td>
+                        <td class="p-2">JOHN</td>
 
                     </tr>
                     <tr>
 
-                        <td>BALANCE</td>
-                        <td>32082803820</td>
+                        <td class="user p-2">BALANCE</td>
+                        <td class="p-2">32082803820</td>
 
                     </tr>
                     <tr>
 
-                        <td>ACTIVE</td>
-                        <td><i class="fa-regular fa-circle-check activate"></i></td>
+                        <td class="user p-2">ACTIVE</td>
+                        <td class="p-2"><i class="fa-regular fa-circle-check fs-4  text-success"></i></td>
 
                     </tr>
                     <tr>
 
-                        <td>UNBLOCKED</td>
-                        <td><i class="fa-regular fa-circle-check activate"></i></td>
+                        <td class="user p-2">UNBLOCKED</td>
+                        <td class="p-2"><i class="fa-regular fa-circle-check fs-4  text-success"></i></td>
 
                     </tr>
                 </table>
@@ -121,7 +127,7 @@
 
         </section>
     </main>
-    <script src="balance.js"></script>
+
 </body>
 
 </html>
