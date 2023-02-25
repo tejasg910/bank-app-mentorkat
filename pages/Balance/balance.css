@@ -74,8 +74,9 @@ table {
 .mainsection .tablesection {
 }
 .mainsection .tablesection td {
-  padding: 0.4rem;
+  padding: 0.9rem;
   border: 2px solid grey;
+  font-size: 2rem;
 }
 
 .mainsection .tablesection h2 {

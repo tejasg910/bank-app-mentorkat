@@ -50,9 +50,10 @@
   color: white;
   font-weight: 800;
   padding: 15px 10px;
-  width: 100%;
+  width: 7rem;
   transition: 0.2s all;
   cursor: pointer;
+  margin: 0 1rem;
 }
 
 .inputbtn:hover {
@@ -73,4 +74,9 @@
 }
 .p-0-2 {
   padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
