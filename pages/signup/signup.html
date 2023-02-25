@@ -11,103 +11,114 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/universal.css"">
 
 </head>
 
 <body>
-    <div class="container-fluid vw-100 vh-100 ">
+    <div class=" container-fluid vw-100 vh-100 ">
 
 
-        <nav id="navbar" class="fs-4 d-flex  justify-content-between">
-            <div class="d-flex">
-                <i class="fa-solid m-2 fa-ellipsis"></i>
-                <p>Welcome Admin</p>
-            </div>
-            <div class="d-flex">
-                <p>2023-05-07</p>
-                <i class="fa-solid fa-power-off m-2"></i>
-            </div>
-        </nav>
-        <main class="mainsection d-grid">
-            <div class="row d-flex flex-column flex-sm-row">
+    <nav id=" navbar" class="max-vw-100 fs-4 d-flex  justify-content-between">
+    <div class="d-flex justify-center px-4 align-items-center navcontainer">
+        <i class="fa-solid fa-ellipsis"></i>
+        <p class="m-0 px-2">Welcome Admin</p>
+    </div>
+    <div class="d-flex justify-center align-items-center navcontainer">
+        <p class="m-0 px-2">2023-05-07</p>
+        <i class="fa-solid fa-power-off pl-2"></i>
+    </div>
+    </nav>
+    <main class="mainsection d-grid">
+        <div class="row d-flex flex-column flex-sm-row">
 
 
-                <section
-                    class="collapse position-relative collapse-horizontal bg-body-secondary show w-25 vh-100 d-none d-lg-block"
-                    id="collapseWidthExample">
-                    <div>
+            <section
+                class="collapse position-relative collapse-horizontal bg-body-secondary show w-25 vh-100 d-none d-lg-block"
+                id="collapseWidthExample">
+                <div>
 
 
+                    <span class="position-absolute top-0 end-0">
+                        <i data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample"
+                            class="fa-solid fa-xmark d-block d-md-none closebutton"></i>
 
-                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                All Customers
-                            </li>
-                        </ul>
-                        <ul class="bg-black rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                Create New Account
-                            </li>
-                        </ul>
+                    </span>
 
-                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                Deposit
-                            </li>
-                        </ul>
-                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                Withdraw
-                            </li>
-                        </ul>
-                        <ul class="bg-secondary rounded-0 mx-auto my-2 p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                Balance
-                            </li>
-                        </ul>
-                        <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                            <li>
-                                Transfer
-                            </li>
-                        </ul>
+                    <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../All-costumers/AllCostumers.html">All
+                                Costumers</a>
+                        </li>
+                    </ul>
+                    <ul
+                        class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled active">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../signup/signup.html">Create
+                                New
+                                Account</a>
+                        </li>
+                    </ul>
+
+                    <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../Deposit/deposite.html">Deposit</a>
+                        </li>
+                    </ul>
+                    <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../Withdraw/withdraw.html">Withdraw</a>
+                        </li>
+                    </ul>
+                    <ul class="bg-secondary rounded-0 mx-auto my-2 p-2 text-center text-white w-75  list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../Balance/balance.html">Balance</a>
+                        </li>
+                    </ul>
+                    <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="../Transfer/transfer.html">Transfer</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="formsection relative col-12 col-sm-8">
+
+
+                <h2 class="text-center">Create new account</h2>
+                <form class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column w-50">
+
+                        <label for="name">NAME</label>
+                        <input class="input p-2" type="name" placeholder="John">
                     </div>
-                </section>
-                <section class="formsection relative col-12 col-sm-8">
+                    <div class="d-flex flex-column w-50">
 
+                        <label for="email">EMAIL</label>
+                        <input class="input p-2" type="email" placeholder="hello@greatsite.com">
+                    </div>
+                    <div class="d-flex flex-column w-50">
 
-                    <h2 class="text-center">Create new account</h2>
-                    <form class="d-flex flex-column align-items-center">
-                        <div class="d-flex flex-column w-50">
+                        <label for="email">PASSWORD</label>
+                        <input class="p-2 " type="password" placeholder="Password">
+                    </div>
+                    <div class="d-flex flex-column w-50">
 
-                            <label for="name">NAME</label>
-                            <input class="input p-2" type="name" placeholder="John">
-                        </div>
-                        <div class="d-flex flex-column w-50">
-
-                            <label for="email">EMAIL</label>
-                            <input class="input p-2" type="email" placeholder="hello@greatsite.com">
-                        </div>
-                        <div class="d-flex flex-column w-50">
-
-                            <label for="email">PASSWORD</label>
-                            <input class="p-2 " type="password" placeholder="Password">
-                        </div>
-                        <div class="d-flex flex-column w-50">
-
-                            <label for="date">DATE</label>
-                            <input class="p-2 " type="date" placeholder="Password">
-                        </div>
-                        <input class="p-2 mt-4 w-50 btn bg-black text-white rounded-0" type="submit" value="Create">
-                    </form>
-                </section>
-            </div>
-        </main>
+                        <label for="date">DATE</label>
+                        <input class="p-2 " type="date" placeholder="Password">
+                    </div>
+                    <input class="p-2 mt-4 w-50 btn bg-black text-white rounded-0" type="submit" value="Create">
+                </form>
+            </section>
+        </div>
+    </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="./signup.js"></script>
 
-</body>
+    </body>
 
 </html>

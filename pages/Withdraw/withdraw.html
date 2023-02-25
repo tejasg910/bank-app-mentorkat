@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/universal.css"">
 
 </head>
 
 <body>
-    <nav id="navbar" class="max-vw-100 fs-4 d-flex  justify-content-between">
-        <div class="d-flex justify-center px-4 align-items-center navcontainer">
-            <i class="fa-solid fa-ellipsis"></i>
-            <p class="m-0 px-2">Welcome Admin</p>
-        </div>
-        <div class="d-flex justify-center align-items-center navcontainer">
-            <p class="m-0 px-2">2023-05-07</p>
-            <i class="fa-solid fa-power-off pl-2"></i>
-        </div>
+    <nav id=" navbar" class="max-vw-100 fs-4 d-flex  justify-content-between">
+    <div class="d-flex justify-center px-4 align-items-center navcontainer">
+        <i class="fa-solid fa-ellipsis"></i>
+        <p class="m-0 px-2">Welcome Admin</p>
+    </div>
+    <div class="d-flex justify-center align-items-center navcontainer">
+        <p class="m-0 px-2">2023-05-07</p>
+        <i class="fa-solid fa-power-off pl-2"></i>
+    </div>
     </nav>
     <hr class="m-0">
     <main id="main" class="d-flex vh-100 ">
@@ -45,29 +46,25 @@
                 </span>
 
 
+
                 <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
                     <li>
-                        All Customers
+                        <a class="text-decoration-none text-white" href="../Deposit/deposite.html">Deposit</a>
                     </li>
                 </ul>
-                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
+                <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled active">
                     <li>
-                        Deposit
-                    </li>
-                </ul>
-                <ul class="bg-black rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
-                    <li>
-                        Withdraw
+                        <a class="text-decoration-none text-white" href="../Withdraw/withdraw.html">Withdraw</a>
                     </li>
                 </ul>
                 <ul class="bg-secondary rounded-0 mx-auto my-2 p-2 text-center text-white w-75  list-unstyled">
                     <li>
-                        Balance
+                        <a class="text-decoration-none text-white" href="../Balance/balance.html">Balance</a>
                     </li>
                 </ul>
                 <ul class="bg-secondary rounded-0 mx-auto my-2  p-2 text-center text-white w-75  list-unstyled">
                     <li>
-                        Transfer
+                        <a class="text-decoration-none text-white" href="../Transfer/transfer.html">Transfer</a>
                     </li>
                 </ul>
             </div>
@@ -137,6 +134,6 @@
         </section>
     </main>
 
-</body>
+    </body>
 
 </html>
